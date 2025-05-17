@@ -1,6 +1,6 @@
 use uuid::Uuid;
 use serde_json::Value;
-#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, Clone, serde::Serialize, serde::Deserialize, sqlx::FromRow)]
 pub struct Activity {
     pub id: Uuid,
     pub business_id: Uuid,

@@ -1,5 +1,5 @@
 use uuid::Uuid;
-#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, Clone, serde::Serialize, serde::Deserialize, sqlx::FromRow)]
 pub struct User {
     pub id: Uuid,
     pub email: String,
