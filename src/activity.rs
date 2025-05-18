@@ -6,7 +6,7 @@ pub struct Activity {
     pub business_id: Uuid,
     pub title: String,
     pub location: String,
-    pub capacity: u32,
+    pub capacity: i32,
     pub time: chrono::DateTime<chrono::Utc>,
     pub equipment: Value,
     pub created_at: chrono::DateTime<chrono::Utc>,
